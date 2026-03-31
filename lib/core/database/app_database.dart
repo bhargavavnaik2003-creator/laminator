@@ -34,6 +34,18 @@ class AppDatabase extends _$AppDatabase {
 
 LazyDatabase _openConnection() {
   return LazyDatabase(() async {
-    return driftDatabase(name: 'app_database_v5');
+    return driftDatabase(
+      name: 'app_database_v5',
+      web: DriftWebOptions(
+        sqlite3Wasm: Uri.parse('sqlite3.wasm'),
+        driftWorker: Uri.parse('drift_worker.js'),
+        onResult: (result) {
+          if (result.missingFeatures.isNotEmpty) {
+            // ignore: avoid_print
+            print('Using ${result.chosenImplementation} due to missing browser features: ${result.missingFeatures}');
+          }
+        },
+      ),
+    );
   });
 }
