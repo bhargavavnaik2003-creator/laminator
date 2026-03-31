@@ -1,0 +1,254 @@
+{
+  "laminates": [
+    {
+      "id": 1,
+      "code": "MR-OAK-001",
+      "name": "Natural Oak",
+      "texturePath": "assets/textures/oak_natural.png",
+      "finishType": "woodmatt",
+      "colorPrimary": "#C8A96E",
+      "catalogueId": 1,
+      "patternCategory": "wood"
+    },
+    {
+      "id": 2,
+      "code": "MR-OAK-002",
+      "name": "Smoked Oak",
+      "texturePath": "assets/textures/oak_smoked.png",
+      "finishType": "matte",
+      "colorPrimary": "#7A5C3E",
+      "catalogueId": 1,
+      "patternCategory": "wood"
+    },
+    {
+      "id": 3,
+      "code": "MR-OAK-003",
+      "name": "Bleached Oak",
+      "texturePath": "assets/textures/oak_bleached.png",
+      "finishType": "gloss",
+      "colorPrimary": "#E8D5B0",
+      "catalogueId": 1,
+      "patternCategory": "wood"
+    },
+    {
+      "id": 4,
+      "code": "MR-WAL-001",
+      "name": "Dark Walnut",
+      "texturePath": "assets/textures/walnut_dark.png",
+      "finishType": "gloss",
+      "colorPrimary": "#4E3524",
+      "catalogueId": 1,
+      "patternCategory": "wood"
+    },
+    {
+      "id": 5,
+      "code": "MR-WAL-002",
+      "name": "Natural Walnut",
+      "texturePath": "assets/textures/walnut_natural.png",
+      "finishType": "woodmatt",
+      "colorPrimary": "#7B5B3A",
+      "catalogueId": 1,
+      "patternCategory": "wood"
+    },
+    {
+      "id": 6,
+      "code": "MR-MAP-001",
+      "name": "Maple Light",
+      "texturePath": "assets/textures/maple_light.png",
+      "finishType": "suede",
+      "colorPrimary": "#E8D5A3",
+      "catalogueId": 1,
+      "patternCategory": "wood"
+    },
+    {
+      "id": 7,
+      "code": "MR-MAP-002",
+      "name": "Maple Cream",
+      "texturePath": "assets/textures/maple_cream.png",
+      "finishType": "matte",
+      "colorPrimary": "#F0E4C2",
+      "catalogueId": 1,
+      "patternCategory": "wood"
+    },
+    {
+      "id": 8,
+      "code": "MR-ASH-001",
+      "name": "Grey Ash",
+      "texturePath": "assets/textures/ash_grey.png",
+      "finishType": "woodmatt",
+      "colorPrimary": "#A8A8A0",
+      "catalogueId": 1,
+      "patternCategory": "wood"
+    },
+    {
+      "id": 9,
+      "code": "MR-ASH-002",
+      "name": "White Ash",
+      "texturePath": "assets/textures/ash_white.png",
+      "finishType": "matte",
+      "colorPrimary": "#D8D5CC",
+      "catalogueId": 1,
+      "patternCategory": "wood"
+    },
+    {
+      "id": 10,
+      "code": "MR-TK-001",
+      "name": "Teak Classic",
+      "texturePath": "assets/textures/teak_classic.png",
+      "finishType": "gloss",
+      "colorPrimary": "#9E6B3E",
+      "catalogueId": 1,
+      "patternCategory": "wood"
+    },
+    {
+      "id": 11,
+      "code": "MR-MAR-001",
+      "name": "Calacatta White",
+      "texturePath": "assets/textures/marble_calacatta.png",
+      "finishType": "gloss",
+      "colorPrimary": "#F0EDEA",
+      "catalogueId": 2,
+      "patternCategory": "stone"
+    },
+    {
+      "id": 12,
+      "code": "MR-MAR-002",
+      "name": "Nero Marquina",
+      "texturePath": "assets/textures/marble_nero.png",
+      "finishType": "gloss",
+      "colorPrimary": "#1A1A1A",
+      "catalogueId": 2,
+      "patternCategory": "stone"
+    },
+    {
+      "id": 13,
+      "code": "MR-MAR-003",
+      "name": "Emperador Brown",
+      "texturePath": "assets/textures/marble_emperor.png",
+      "finishType": "matte",
+      "colorPrimary": "#6B4A35",
+      "catalogueId": 2,
+      "patternCategory": "stone"
+    },
+    {
+      "id": 14,
+      "code": "MR-GRN-001",
+      "name": "Grey Granite",
+      "texturePath": "assets/textures/granite_grey.png",
+      "finishType": "suede",
+      "colorPrimary": "#8C8C8C",
+      "catalogueId": 2,
+      "patternCategory": "stone"
+    },
+    {
+      "id": 15,
+      "code": "MR-GRN-002",
+      "name": "Black Granite",
+      "texturePath": "assets/textures/granite_black.png",
+      "finishType": "gloss",
+      "colorPrimary": "#2A2A2A",
+      "catalogueId": 2,
+      "patternCategory": "stone"
+    },
+    {
+      "id": 16,
+      "code": "MR-CON-001",
+      "name": "Raw Concrete",
+      "texturePath": "assets/textures/concrete_raw.png",
+      "finishType": "matte",
+      "colorPrimary": "#C0BFBB",
+      "catalogueId": 2,
+      "patternCategory": "stone"
+    },
+    {
+      "id": 17,
+      "code": "MR-CON-002",
+      "name": "Polished Concrete",
+      "texturePath": "assets/textures/concrete_polish.png",
+      "finishType": "gloss",
+      "colorPrimary": "#A8A8A4",
+      "catalogueId": 2,
+      "patternCategory": "stone"
+    },
+    {
+      "id": 18,
+      "code": "MR-PLN-001",
+      "name": "Arctic White",
+      "texturePath": "assets/textures/plain_white.png",
+      "finishType": "gloss",
+      "colorPrimary": "#FAFAFA",
+      "catalogueId": 3,
+      "patternCategory": "plain"
+    },
+    {
+      "id": 19,
+      "code": "MR-PLN-002",
+      "name": "Charcoal",
+      "texturePath": "assets/textures/plain_charcoal.png",
+      "finishType": "matte",
+      "colorPrimary": "#3A3A3A",
+      "catalogueId": 3,
+      "patternCategory": "plain"
+    },
+    {
+      "id": 20,
+      "code": "MR-PLN-003",
+      "name": "Sage Green",
+      "texturePath": "assets/textures/plain_sage.png",
+      "finishType": "suede",
+      "colorPrimary": "#8FAF8A",
+      "catalogueId": 3,
+      "patternCategory": "plain"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Modern Living Room",
+      "category": "living",
+      "imagePath": "assets/rooms/living_room_01.jpg",
+      "surfaces": [
+        {
+          "id": 1,
+          "roomId": 1,
+          "name": "Feature Wall",
+          "maskPath": "assets/rooms/masks/living_room_01_mask.png"
+        },
+        {
+          "id": 4,
+          "roomId": 1,
+          "name": "TV Unit",
+          "maskPath": "assets/rooms/masks/living_room_011_mask.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Classic Bedroom",
+      "category": "bedroom",
+      "imagePath": "assets/rooms/bedroom_01.jpg",
+      "surfaces": [
+        {
+          "id": 2,
+          "roomId": 2,
+          "name": "Wardrobe",
+          "maskPath": "assets/rooms/masks/bedroom_01_mask.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Open Kitchen",
+      "category": "kitchen",
+      "imagePath": "assets/rooms/kitchen_01.jpg",
+      "surfaces": [
+        {
+          "id": 3,
+          "roomId": 3,
+          "name": "Cabinets",
+          "maskPath": "assets/rooms/masks/kitchen_01_mask.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+name: kiosk_app
+description: Merino Laminate Kiosk — Windows desktop visualizer app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^3.3.1
+  riverpod_annotation: ^4.0.2
+
+  # Persistence — reactive SQLite via Drift
+  drift: ^2.18.0
+  drift_flutter: ^0.2.0
+
+  # Navigation
+  go_router: ^17.1.0
+
+  # JSON serialization
+  json_annotation: ^4.9.0
+
+  # Math helpers for perspective matrix
+  vector_math: ^2.1.4
+
+  # HTTP (for license server in Phase 11)
+  http: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Code generation
+  build_runner: ^2.4.9
+  drift_dev: ^2.18.0
+  riverpod_generator: ^4.0.3
+  json_serializable: ^6.8.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/
+    - assets/textures/
+    - assets/rooms/
+    - assets/rooms/masks/
