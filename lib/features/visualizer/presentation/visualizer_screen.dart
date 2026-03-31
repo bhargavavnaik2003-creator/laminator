@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -297,47 +296,42 @@ class _ImageLayer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Check if the asset file exists physically on disk
-    final fileExists = File(imagePath).existsSync();
-
-    if (fileExists) {
-      if (blendMode != null && placeholderColor != Colors.transparent) {
-        // The TARGETED TINT (The Magic)
-        return ColorFiltered(
-          colorFilter: ColorFilter.mode(
-            // Use alpha: 0.7 to allow grain to show, just like the Merino example!
-            placeholderColor.withValues(alpha: 0.7),
-            blendMode!,
-          ),
-          child: Image.asset(
-            imagePath, // MUST BE TRANSPARENT PNG
-            fit: BoxFit.contain,
-          ),
-        );
-      } else {
-        // The Base Room Layer (Static)
-        return Image.asset(
-          imagePath,
-          fit: BoxFit.contain,
-        );
-      }
-    } else {
-      // Dummy placeholder when assets are missing
-      return Container(
-        color: placeholderColor.withValues(alpha: blendMode != null ? 0.8 : 1.0),
-        child: Center(
-          child: Text(
-            '$placeholderLabel\nMissing: $imagePath',
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              shadows: [Shadow(blurRadius: 10, color: Colors.black)],
+    Widget imageWidget = Image.asset(
+      imagePath,
+      fit: BoxFit.contain,
+      errorBuilder: (context, error, stackTrace) {
+        // Dummy placeholder when assets are missing
+        return Container(
+          color: placeholderColor.withValues(alpha: blendMode != null ? 0.8 : 1.0),
+          child: Center(
+            child: Text(
+              '$placeholderLabel\nMissing: $imagePath',
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                shadows: [Shadow(blurRadius: 10, color: Colors.black)],
+              ),
             ),
           ),
+        );
+      },
+    );
+
+    if (blendMode != null && placeholderColor != Colors.transparent) {
+      // The TARGETED TINT (The Magic)
+      return ColorFiltered(
+        colorFilter: ColorFilter.mode(
+          // Use alpha: 0.7 to allow grain to show, just like the Merino example!
+          placeholderColor.withValues(alpha: 0.7),
+          blendMode!,
         ),
+        child: imageWidget,
       );
+    } else {
+      // The Base Room Layer (Static)
+      return imageWidget;
     }
   }
 }
